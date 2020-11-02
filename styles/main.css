@@ -11,6 +11,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.6rem;
+    padding: 100px 0;
 }
 
 .content-container {
@@ -23,3 +24,117 @@ body {
     background-color: mistyrose;
     padding: 60px 0;
 }
+
+.section-bg-white {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.example-relative,
+.headline {
+    position: relative;
+    /* position relative to its original position, counting from an upper left corner from where it would be originally place*/
+    /* we must specify the offset for position:relative */
+    /* default position: static */
+    top: 50px;
+    left: 50px;
+}
+/* Position absolute */
+
+.example-absolute 
+.content-container 
+{
+    position: relative;
+    border: 1px solid red;
+}
+
+.example-absolute
+.headline {
+    position: absolute;
+    /* this position means that the element is taken out of the flow */
+    top: 50px;
+    left: 50px;
+}
+
+/* Position fixed */
+
+.example-fixed
+.headline {
+    position: fixed;
+    /* Relative to the VIEWPORT.We take the element out of the flow by "position:absolute or fixed" */
+    top: 0;
+    left: 0;
+}
+
+.chat {
+    position: fixed;
+    z-index: 1;
+    /* 1000 is the highest element */
+    bottom: 32px;
+    right: 32px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 20px gray;
+}
+
+.chat-text {
+    position: absolute;
+    top: 40px;
+    left: 34px;
+}
+
+.card {
+    position: relative;
+    padding: 60px 80px 20px 20px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 0 20px black;
+    max-width: 400px;
+    margin: 0 auto;
+    top: 0;
+}
+
+.badge {
+    position: absolute;
+    /* after relative position give an offset, like "right: 0" */
+    right: -20px;
+    top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: violet;
+}
+
+.example-z {
+    position: relative;
+    padding: 0;
+    height: 3300px;
+}
+.box {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: mistyrose;
+    border: 1px solid black;
+}
+
+.box-1 {
+    top: 0px;
+    left: 30px;
+    z-index: 10;
+    /* ordering in the stack. THe higher number, the higher in priority. YOU can also you use z-index in negative. Usually using multiples in 10. If we don't specify z-index, then it follows the order of html */
+}
+
+.box-2 {
+    top: 30px;
+    left: 60px;
+}
+
+.box-3 {
+    top: 60px;
+    left: 90px;
+    z-index: 20;
+}
+
+
