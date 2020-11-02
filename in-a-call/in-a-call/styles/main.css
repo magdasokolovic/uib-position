@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.main.container, 
+img { 
+    position: relative;
+    max-width: 600px;
+}
+
+.woman {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 5px;
+    left: 430px;
+    border: 5px solid white;
+}
+
+
+.button {
+    position: absolute;
+}
+
+button {
+    font-size: 4rem;
+    text-align: center;
+}
